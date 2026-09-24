@@ -1,0 +1,27 @@
+# Diretório local do Terraform
+.terraform/
+
+# Arquivos de state
+*.tfstate
+*.tfstate.*
+
+# Planos salvos
+tfplan
+*.tfplan
+
+# Arquivos de log
+crash.log
+crash.*.log
+
+# Valores específicos do ambiente
+terraform.tfvars
+*.auto.tfvars
+
+# Overrides locais
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Evidências e prints locais
+/image/
