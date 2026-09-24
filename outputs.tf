@@ -20,7 +20,7 @@ output "public_ip" {
 
 output "ami_id" {
   description = "AMI Amazon Linux 2 utilizada na instancia."
-  value       = data.aws_ami.amazon_linux_2.id
+  value       = aws_instance.lab.ami
 }
 
 output "ssh_command" {

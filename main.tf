@@ -147,6 +147,10 @@ resource "aws_instance" "lab" {
     http_tokens = "required"
   }
 
+  lifecycle {
+    ignore_changes = [ami]
+  }
+
   tags = {
     Name = "terraform-lab-ec2"
   }
